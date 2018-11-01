@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Pong</title>
-	</head>
-	<body>
-		<div class="game-wrapper">
-			<h1>Pong</h1>
-			<div id="game"></div>
-			<!-- Rough-out your SVG mark-up here to start... -->
-		</div>
-		<script type="text/javascript" src="build/bundle.js"></script>
-	</body>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Pong</title>
+</head>
+
+<body>
+	<div class="game-wrapper">
+		<h1>Pong</h1>
+		<div id="game"></div>
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="512" height="256">
+			<rect width="512" height="256" fill="#353535" />
+			<rect x="10" y="103" width="8" height="50" fill="white" />
+			<rect x="494" y="103" width="8" height="50" fill="white" />
+			<line x1="256" y1="0" x2="256" y2="256" stroke="white" stroke-dasharray="17.5" stroke-width="3" />
+			<circle cx="256" cy="128" r="8" fill="white" />
+		</svg>
+		<!-- A dividing line down the middle of the board (look into the stroke-dasharray attribute)-->
+	</div>
+	<script type="text/javascript" src="build/bundle.js"></script>
+</body>
+
 </html>
