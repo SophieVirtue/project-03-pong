@@ -61,6 +61,9 @@ export default class Paddle {
     rect.setAttributeNS(null, 'height', this.height);
     rect.setAttributeNS(null, 'x', this.x);
     rect.setAttributeNS(null, 'y', this.y);
+    rect.setAttributeNS(null, 'stroke', 'black');
+    rect.setAttributeNS(null, 'stroke-width', '2');
+
 
     svg.appendChild(rect);
   }

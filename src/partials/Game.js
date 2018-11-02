@@ -57,6 +57,14 @@ export default class Game {
 		return;
 	}
 
+	if(this.player1.score === 2){
+	 alert('Left player won the game!');
+	 location.reload();
+	} else if (this.player2.score === 2){
+	 alert('Right player won the game!');
+	 location.reload();
+	}
+
     this.gameElement.innerHTML = '';
     let svg = document.createElementNS(SVG_NS, 'svg');
     svg.setAttributeNS(null, 'width', this.width);
