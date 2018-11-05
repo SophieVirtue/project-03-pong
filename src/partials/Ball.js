@@ -12,6 +12,9 @@ export default class Ball {
 
     reset() {
 
+        this.ax = 0.005;
+        this.ay = 0.005;
+
         this.x = this.boardWidth / 2;
         this.y = this.boardHeight / 2;
 
@@ -63,6 +66,9 @@ export default class Ball {
 
     
     render(svg, player1, player2) {
+
+      this.vx += this.ax;
+      this.vy += this.ay;
 
       const rightGoal = this.x + this.radius >= this.boardWidth;
       const leftGoal = this.x - this.radius <= 0;

@@ -48,7 +48,7 @@ export default class Game {
 	this.board = new Board(this.width, this.height);
 	this.ball = new Ball(8, this.width, this.height);
 	this.score1 = new Score(this.width / 2 - 50, 30, 30);
-	this.score2 = new Score(this.width / 2 + 25, 30, 30);
+	this.score2 = new Score(this.width / 2 + 30, 30, 30);
   } //end of constructor
 
   render() {
@@ -57,10 +57,10 @@ export default class Game {
 		return;
 	}
 
-	if(this.player1.score === 2){
+	if(this.player1.score === 10){
 	 alert('Left player won the game!');
 	 location.reload();
-	} else if (this.player2.score === 2){
+	} else if (this.player2.score === 10){
 	 alert('Right player won the game!');
 	 location.reload();
 	}
