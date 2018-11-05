@@ -46,7 +46,8 @@ export default class Game {
 
     this.gameElement = document.getElementById(this.element);
 	this.board = new Board(this.width, this.height);
-	this.ball = new Ball(8, this.width, this.height);
+	this.ball1 = new Ball(8, this.width, this.height);
+	this.ball2 = new Ball(8, this.width, this.height);
 	this.score1 = new Score(this.width / 2 - 50, 30, 30);
 	this.score2 = new Score(this.width / 2 + 30, 30, 30);
   } //end of constructor
@@ -57,10 +58,10 @@ export default class Game {
 		return;
 	}
 
-	if(this.player1.score === 10){
+	if(this.player1.score === 14){
 	 alert('Left player won the game!');
 	 location.reload();
-	} else if (this.player2.score === 10){
+	} else if (this.player2.score === 14){
 	 alert('Right player won the game!');
 	 location.reload();
 	}
@@ -74,7 +75,8 @@ export default class Game {
 	this.board.render(svg);
 	this.player1.render(svg);
 	this.player2.render(svg);
-	this.ball.render(svg, this.player1, this.player2);
+	this.ball1.render(svg, this.player1, this.player2);
+	this.ball2.render(svg, this.player1, this.player2);
 	this.score1.render(svg, this.player1.score);
 	this.score2.render(svg, this.player2.score);
   }
