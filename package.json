@@ -1,7 +1,7 @@
 {
   "name": "pong-svg",
   "version": "0.1.0",
-  "description": "An SVG Pong game.",
+  "description": "An SVG Pong game with a few changes from the original game.",
   "license": "ISC",
   "author": "Sophie Virtue",
   "main": "build/bundle.js",
