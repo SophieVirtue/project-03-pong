@@ -22,7 +22,7 @@ export default class Paddle {
     document.addEventListener('keyup', event => {
         this.keyState[event.key || event.which] = false;
     }, true);     
-   }
+  }
   
   up(){
   this.y = Math.max (0, [this.y - this.speed]);
@@ -63,7 +63,6 @@ export default class Paddle {
     rect.setAttributeNS(null, 'y', this.y);
     rect.setAttributeNS(null, 'stroke', 'black');
     rect.setAttributeNS(null, 'stroke-width', '2');
-
 
     svg.appendChild(rect);
   }

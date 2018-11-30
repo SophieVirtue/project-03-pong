@@ -11,7 +11,6 @@ export default class Ball {
     }
 
     reset() {
-
         this.ax = 0.005;
         this.ay = 0.005;
 
@@ -79,7 +78,7 @@ export default class Ball {
         } else if (leftGoal) { 
             this.goal(player2);
             this.direction = -1;
-            }
+        }
 
         this.x += this.vx;
         this.y += this.vy;
